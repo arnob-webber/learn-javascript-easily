@@ -1,4 +1,4 @@
-// javaScript variables are used to store data values, thhere r 3 keywords used to declare variables:
+//variables are used to store data values, thhere r 3 keywords used to declare variables:
 // (1)var (2)let and (3)const
 
 /*------------var-----------
@@ -28,7 +28,9 @@ console.log(a);
 3. for objects and arrays declared with const, their properties or elements can still be modified.*/
 
 const PI = 3.14;
-// PI = 3.14159; // errror: cannot be reassigned
+PI = 3.14159; // uncaught TypeError: invalid assignment to const 'PI'
+// console.log(PI)
+
 const person = {
   name: "arnob",
   age: 22,
