@@ -21,3 +21,16 @@ a = 10; // reassignment
 // let a = 15; // error: identifier 'a' has already been declared, so cannot be redeclared
 
 console.log(a);
+
+/*------------const-----------
+1. variables declared with const r also block-scoped.
+2. they must be initialized with a value and  -------cannot be reassigned once assigned--------- (power)
+3. for objects and arrays declared with const, their properties or elements can still be modified.*/
+
+const PI = 3.14;
+// PI = 3.14159; // errror: cannot be reassigned
+const person = {
+  name: "arnob",
+  age: 22,
+};
+person.age = 23; // valid: Modifying object properties (point [3])
